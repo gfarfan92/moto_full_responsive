@@ -1,15 +1,15 @@
 :root {
   --button-color-red: linear-gradient(
     to right,
-    rgb(242, 50, 50),
-    rgb(180, 24, 24),
-    rgb(242, 50, 50)
+
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 0, 0, 0.8)
   );
   --button-color-blue: linear-gradient(
     to right,
-    rgb(49, 129, 195),
-    rgb(20, 12, 243),
-    rgb(49, 129, 195)
+
+    rgba(20, 12, 243, 0.6),
+    rgba(49, 129, 195, 0.6)
   );
   --overlie: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
@@ -47,9 +47,9 @@ button {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px 30px;
-  border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
   cursor: pointer;
   background: var(--button-color-red);
@@ -58,9 +58,11 @@ button {
 button:hover {
   background: var(--button-color-blue);
 }
+
 .container {
   max-width: 1500px;
   margin: auto;
+  padding: 50px 12px;
 }
 .color-acento {
   background: var(--button-color-red);
@@ -91,7 +93,7 @@ button:hover {
     position: fixed;
     width: 100%; /*dejo mi header fijo*/
   }
-  header .container {
+  header .container-header {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -100,17 +102,46 @@ button:hover {
     padding-bottom: 0;
     padding-right: 20px;
   }
+  #hero h2 {
+    font-size: 5em;
+  }
+  .container h2 {
+    font-size: 4em;
+    color: red;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .carta p {
+    display: block; /* Mostrar el párrafo */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ajustar la opacidad del texto para mejor legibilidad */
+    background-color: rgba(
+      25,
+      25,
+      25,
+      0.2
+    ); /* Fondo negro con opacidad, hace un recuadro trasparentoso dentro de cartas*/
+    padding: 10px; /* Añadir padding para dar algo de espacio dentro del párrafo */
+    border-radius: 5px; /* Redondear bordes del contenedor */
+  }
+
+  .container .carta {
+    flex: 1 1 calc(33.333% - 20px); /* Ajuste para tres columnas */
+    margin: 10px;
+    padding: 30px;
+  }
+
+  /*repuestos-----------------------------------------------------------*/
   main #repuestos .container .cartas-repuestos {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  main #repuestos .container .carta {
-    flex: 1 1 calc(33.333% - 20px); /* Ajuste para tres columnas */
-    margin: 10px;
-  }
+  /*mecanicos-----------------------------------------------------------*/
   main #mecanicos .container .cartas-mecanico {
     display: flex;
     flex-direction: row;
@@ -118,10 +149,7 @@ button:hover {
     justify-content: space-between;
   }
 
-  main #mecanicos .container .carta {
-    flex: 1 1 calc(33.333% - 20px); /* Ajuste para tres columnas */
-    margin: 10px;
-  }
+  /*accesorios-----------------------------------------------------------*/
   main #accesorios .container .cartas-accesorios {
     display: flex;
     flex-direction: row;
@@ -129,14 +157,11 @@ button:hover {
     justify-content: space-between;
   }
 
-  main #accesorios .container .carta {
-    flex: 1 1 calc(33.333% - 20px); /* Ajuste para tres columnas */
-    margin: 10px;
-  }
-  main #a_rodar .container .cartas-accesorios {
+  /*a_rodar-----------------------------------------------------------*/
+  main #a_rodar .text-image {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }

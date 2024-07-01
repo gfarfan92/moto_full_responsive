@@ -4,17 +4,6 @@ main #repuestos {
   text-align: center;
 }
 
-main #repuestos h2 {
-  margin-top: 0;
-  font-size: 40px;
-}
-
-main #repuestos .container {
-  padding: 50px 12px;
-}
-main #repuestos p {
-  display: none;
-}
 main #repuestos .carta {
   color: white;
 }

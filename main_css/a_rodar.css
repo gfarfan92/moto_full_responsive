@@ -28,6 +28,7 @@
   margin: 0 auto;
   height: 500px; /* Fijar la altura del contenedor de imágenes */
   overflow: hidden; /* Asegurar que las imágenes no se salgan del contenedor */
+  border-radius: 15%;
 }
 
 .image {

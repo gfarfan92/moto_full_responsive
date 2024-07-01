@@ -4,9 +4,6 @@ main #accesorios {
   text-align: center;
 }
 
-main #accesorios .container {
-  padding: 50px 12px;
-}
 main #accesorios .carta {
   color: white;
 }
