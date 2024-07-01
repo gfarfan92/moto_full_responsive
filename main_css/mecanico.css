@@ -1,0 +1,22 @@
+main #mecanicos {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+main #mecanicos h2 {
+  margin-top: 0;
+}
+
+main #mecanicos .container {
+  padding: 50px 12px;
+}
+
+main #mecanicos .carta:first-child {
+  background-image: var(--overlie), url("/img/moto1.jpg");
+}
+main #mecanicos .carta:nth-child(2) {
+  background-image: var(--overlie), url("/img/moto2.jpg");
+}
+main #mecanicos .carta:nth-child(3) {
+  background-image: var(--overlie), url("/img/moto3.jpg");
+}

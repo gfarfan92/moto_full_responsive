@@ -1,0 +1,42 @@
+header {
+  background-color: black;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  font-size: 1.6em;
+  background: var(--button-color-red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* For non-webkit browsers */
+  background-clip: text;
+  color: transparent;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+header a:hover {
+  background: var(--button-color-blue);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

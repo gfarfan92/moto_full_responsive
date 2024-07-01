@@ -1,0 +1,22 @@
+main #accesorios {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+main #accesorios .container {
+  padding: 50px 12px;
+}
+main #accesorios .carta {
+  color: white;
+}
+
+main #accesorios .carta:first-child {
+  background-image: var(--overlie), url("/img/casco.jpg");
+}
+main #accesorios .carta:nth-child(2) {
+  background-image: var(--overlie), url("/img/uniforme.jpg");
+}
+main #accesorios .carta:nth-child(3) {
+  background-image: var(--overlie), url("/img/moto4.jpg");
+}
