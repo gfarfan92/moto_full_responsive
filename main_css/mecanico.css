@@ -1,5 +1,5 @@
 main #mecanicos {
-  background-color: black;
+  /*background: var(--color-container);*/
   color: white;
   text-align: center;
 }

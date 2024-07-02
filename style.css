@@ -11,8 +11,24 @@
     rgba(20, 12, 243, 0.6),
     rgba(49, 129, 195, 0.6)
   );
-  --overlie: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --overlie: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+  /*color acento---------------------------*/
+  --color-acento: linear-gradient(
+    to right,
+    rgb(108, 105, 105),
+    rgb(237, 229, 229)
+  );
+  --color-acento1: rgb(237, 229, 229);
+  --color-acento2: linear-gradient(
+    to right,
+    rgb(237, 229, 229),
+    rgb(108, 105, 105)
+  );
+  /*-------------------------------------------*/
+  --color-header: rgba(255, 0, 0, 0.7);
+  --color-main: rgba(0, 0, 0, 0.9);
 }
+
 html {
   scroll-behavior: smooth; /*baja al darle click de forma bonita*/
 }
@@ -24,6 +40,9 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
+main {
+  background: var(--color-main);
+}
 h1 {
   font-size: 2.7em;
 }
@@ -32,10 +51,12 @@ h2 {
 }
 h3 {
   font-size: 1.5em;
+  color: white;
 }
 p {
   font-size: 1.2em;
   display: none;
+  color: white;
 }
 ul {
   list-style: none;
@@ -63,15 +84,31 @@ button:hover {
   max-width: 1500px;
   margin: auto;
   padding: 50px 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+/*color-acento*/
 .color-acento {
-  background: var(--button-color-red);
+  background: var(--color-acento);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
 }
-
+.color-acento1 {
+  background: var(--color-acento1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.color-acento2 {
+  background: var(--color-acento2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+/*---------------------------------------*/
 .carta {
   margin: 10px 0;
   display: flex;
@@ -89,44 +126,33 @@ button:hover {
 }
 
 @media (min-width: 720px) {
-  header {
-    position: fixed;
-    width: 100%; /*dejo mi header fijo*/
-  }
-  header .container-header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header nav {
-    flex-direction: row;
-    padding-bottom: 0;
-    padding-right: 20px;
-  }
   #hero h2 {
     font-size: 5em;
   }
   .container h2 {
     font-size: 4em;
-    color: red;
   }
   h3 {
     font-size: 2em;
   }
+
   .carta p {
     display: block; /* Mostrar el párrafo */
     margin-bottom: 30px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ajustar la opacidad del texto para mejor legibilidad */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Ajustar la opacidad del texto para mejor legibilidad */
     background-color: rgba(
       25,
       25,
       25,
-      0.2
+      0.05
     ); /* Fondo negro con opacidad, hace un recuadro trasparentoso dentro de cartas*/
     padding: 10px; /* Añadir padding para dar algo de espacio dentro del párrafo */
-    border-radius: 5px; /* Redondear bordes del contenedor */
+    border-radius: 50px; /* Redondear bordes del contenedor */
   }
 
   .container .carta {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
     flex: 1 1 calc(33.333% - 20px); /* Ajuste para tres columnas */
     margin: 10px;
     padding: 30px;
@@ -158,10 +184,4 @@ button:hover {
   }
 
   /*a_rodar-----------------------------------------------------------*/
-  main #a_rodar .text-image {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
 }
