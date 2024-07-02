@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--hay que buscarlo es https://cdnjs.com/libraries/font-awesome-->
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="main_css/hero.css" />
     <link rel="stylesheet" href="main_css/repuestos.css" />
     <link rel="stylesheet" href="main_css/mecanico.css" />
     <link rel="stylesheet" href="main_css/accesorios.css" />
@@ -17,26 +23,41 @@
   </head>
   <body>
     <!---HEADER-->
+
     <header>
       <div class="container-header">
-        <h1 class="logo">FARPOV MOTORCYCLE</h1>
-        <nav>
-          <a href="#repuestos">Repuestos</a>
-          <a href="#mecanicos">Asesorate con Mecánicos Certificados</a>
-          <a href="#accesorios">Accesorios</a>
-          <a href="#a_rodar">A rodar!!</a>
+        <nav class="nav">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <a href="#" class="enlace">
+            <img src="/img/logo.png" alt="" class="logo" />
+          </a>
+          <ul>
+            <li><a href="#repuestos">Repuestos</a></li>
+            <li>
+              <a href="#mecanicos">Asesoria Mecanica</a>
+            </li>
+            <li><a href="#accesorios">Accesorios</a></li>
+            <li><a href="#a_rodar">A rodar!!</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
         </nav>
+        <!-- Hero de la página -->
+        <section id="hero" class="hero-section">
+          <div class="container-hero">
+            <h2>NOVEDADES</h2>
+            <form action="https://wa.link/aybpp5">
+              <button>Info FarPov</button>
+            </form>
+          </div>
+        </section>
       </div>
     </header>
+
     <!---MAIN-->
     <main>
-      <!--hero de la pagina-->
-      <section id="hero">
-        <h2>NOVEDADES</h2>
-        <form action="https://wa.link/aybpp5">
-          <button>Info FarPov</button>
-        </form>
-      </section>
       <!---repuestos-->
 
       <section id="repuestos">

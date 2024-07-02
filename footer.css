@@ -2,7 +2,7 @@
   background: none;
   color: gray; /* Cambia el color del texto a blanco para mejor contraste */
   text-align: center; /* Centra el texto */
-  padding: 10px 0; /* Añade espaciado interno */
+  padding: 10px 0; /* Añade espaciado interno pa que no se pegue al main*/
 }
 
 footer p {
